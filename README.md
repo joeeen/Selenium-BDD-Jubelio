@@ -34,19 +34,15 @@ Execute `cucumber` command from the root of your project directory.
 ### To run spesific feature file
 Execute `cucumber features/file_name.feature` command
 
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Demo
 
 ### Login
 https://github.com/joeeen/jubelio-intern/assets/118897487/15a0f1db-de65-4c2f-86f9-eba47155333c
 
-
-
 ### Update product quantity
 https://github.com/joeeen/jubelio-intern/assets/118897487/45a385ef-6076-473f-941d-74708ab680cf
-
-
-
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
