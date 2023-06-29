@@ -25,6 +25,7 @@ This project requires the following:
 5. Navigate to the project directory in your terminal.
 6. Run `bundle install` to install the dependencies mentioned in the Gemfile.
 
+
 ## Usage
 After you've set up everything, you can run the tests
 ### To run all the scenarios described in your feature files
@@ -32,4 +33,25 @@ Execute `cucumber` command from the root of your project directory.
 
 ### To run spesific feature file
 Execute `cucumber features/file_name.feature` command
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Demo
+
+### Login
+https://github.com/joeeen/jubelio-intern/assets/118897487/15a0f1db-de65-4c2f-86f9-eba47155333c
+
+
+
+### Update product quantity
+https://github.com/joeeen/jubelio-intern/assets/118897487/45a385ef-6076-473f-941d-74708ab680cf
+
+
+
+
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+## Run results
+
+![Screenshot 2023-06-29 212050](https://github.com/joeeen/jubelio-intern/assets/118897487/bb232d80-2f02-4c84-a541-65d20ba472c0)
+
+<p align="right"><a href="#readme-top">back to top</a></p>
