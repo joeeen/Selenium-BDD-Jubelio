@@ -1,5 +1,5 @@
+<a name="readme-top"></a>
 # Jubelio - Project Based Internship
-
 ## Introduction
 Jubelio is an omni-channel platform designed to assist businesses in setting up online stores, managing orders, synchronizing stock, integrating marketplaces, applying cash registers, utilizing delivery services, and automating accounting records. It integrates with online stores, Point of Sales (POS), and marketplace chat management software.
 
@@ -8,7 +8,6 @@ This repository provides an example of automated testing for the Jubelio platfor
 <li>Capybara</li>
 <li>Cucumber</li>
 <li>Rspec</li>
-
 
 ## Requirements
 This project requires the following:
