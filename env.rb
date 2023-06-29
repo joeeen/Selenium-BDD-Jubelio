@@ -14,4 +14,3 @@ end
 
 Capybara.default_driver = :chrome
 Capybara.default_selector = :css
-Capybara.current_session.driver.browser.manage.window.maximize
