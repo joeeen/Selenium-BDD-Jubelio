@@ -1,7 +1,3 @@
-Given('user is on the {string} page') do |page|
-  visit(page)
-end
-
 When('user inputs {string} and {string}') do |email,password|
   fill_in('email', with: email)
   fill_in('password', with: password)
