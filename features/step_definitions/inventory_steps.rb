@@ -1,22 +1,29 @@
+require_relative '../page_object/inventory_page'
+require_relative '../page_object/login_page'
+
 Given 'user is logged in' do
-  visit('/login')
+  @login_page = LoginPage.new
+  visit('login')
   fill_in('email', with: "qa.rakamin.jubelio@gmail.com")
   fill_in('password', with: "Jubelio123!")
-  find("button[type='Submit']").click
+  @login_page.login_button.click
   sleep 2
 end
 
+Given('user is on the Inventory page') do
+  visit('home/inventory')
+  @inventory_page = InventoryPage.new
+end
+
 When('user updates the quantity of product {string} by {string}') do |product, quantity|
-  find(:xpath, '//*[@id="page-wrapper"]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/button[2]').click  
-  find(:xpath, '//*[@id="page-wrapper"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]').double_click
-  selectivity_item = find('div.selectivity-result-item', text: product)
-  selectivity_item.click
-  find(:xpath, '//*[@id="page-wrapper"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div').double_click
-  find(:xpath, './/div[contains(@class, "rdg-editor-container")]//input[contains(@class, "editor-main")]', wait: 10).set(quantity)
+  @inventory_page.update_button.click
+  @inventory_page.item_dropdown.double_click
+  @inventory_page.item_select(product).click
+  @inventory_page.quantity_input.double_click
+  @inventory_page.quantity_active.set(quantity)
   find_button('Simpan').click
 end
 
 Then('alert success message {string} is displayed') do |success_message|
-  alert_message = find('div.alert-success li').text
-  expect(alert_message).to eq(success_message)
+  expect(@inventory_page.alert_message).to eq(success_message)
 end
