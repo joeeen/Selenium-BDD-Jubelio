@@ -39,15 +39,15 @@ Execute `cucumber features/file_name.feature` command
 ## Demo
 
 ### Login
-https://github.com/joeeen/jubelio-intern/assets/118897487/15a0f1db-de65-4c2f-86f9-eba47155333c
+![Run result - loginFeature](https://github.com/joeeen/jubelio-intern/assets/118897487/291fc65d-93da-47ce-9de2-e63ca2e336d6)
 
 ### Update product quantity
-https://github.com/joeeen/jubelio-intern/assets/118897487/45a385ef-6076-473f-941d-74708ab680cf
+![Run result - inventoryFeature](https://github.com/joeeen/jubelio-intern/assets/118897487/931869d1-2443-4934-b95f-f3b88d375730)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Run results
+![Screenshot 2023-06-29 212050](https://github.com/joeeen/jubelio-intern/assets/118897487/af8e1569-ffcf-4470-a11c-90ea27dc6d69)
 
-![Screenshot 2023-06-29 212050](https://github.com/joeeen/jubelio-intern/assets/118897487/bb232d80-2f02-4c84-a541-65d20ba472c0)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
