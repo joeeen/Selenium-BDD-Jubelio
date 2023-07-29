@@ -20,7 +20,7 @@ This project requires the following:
 2. Install Bundler by running `gem install bundler`
 3. Clone the repository.
    ```
-   git clone https://github.com/joeeen/jubelio-intern
+   git clone https://github.com/joeeen/Selenium-BDD-Jubelio
    ```
 5. Navigate to the project directory in your terminal.
 6. Run `bundle install` to install the dependencies mentioned in the Gemfile.
