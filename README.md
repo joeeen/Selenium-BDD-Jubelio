@@ -37,17 +37,15 @@ Execute `cucumber features/file_name.feature` command
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Demo
-
-### Login
-![Run result - loginFeature](https://github.com/joeeen/jubelio-intern/assets/118897487/291fc65d-93da-47ce-9de2-e63ca2e336d6)
-
 ### Update product quantity
 ![Run result - inventoryFeature](https://github.com/joeeen/jubelio-intern/assets/118897487/931869d1-2443-4934-b95f-f3b88d375730)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Run results
-![Screenshot 2023-06-29 212050](https://github.com/joeeen/jubelio-intern/assets/118897487/af8e1569-ffcf-4470-a11c-90ea27dc6d69)
+### Example positive test cases
+![run result - positive TC](https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/7af9b4e3-e18c-457b-b518-f2f0291205b9)
 
+## Reports
 
 <p align="right"><a href="#readme-top">back to top</a></p>
