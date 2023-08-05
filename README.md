@@ -20,7 +20,7 @@ This project requires the following:
 2. Install Bundler by running `gem install bundler`
 3. Clone the repository.
    ```
-   git clone https://github.com/joeeen/jubelio-intern
+   git clone https://github.com/joeeen/Selenium-BDD-Jubelio
    ```
 5. Navigate to the project directory in your terminal.
 6. Run `bundle install` to install the dependencies mentioned in the Gemfile.
@@ -37,17 +37,15 @@ Execute `cucumber features/file_name.feature` command
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Demo
-
-### Login
-https://github.com/joeeen/jubelio-intern/assets/118897487/15a0f1db-de65-4c2f-86f9-eba47155333c
-
 ### Update product quantity
-https://github.com/joeeen/jubelio-intern/assets/118897487/45a385ef-6076-473f-941d-74708ab680cf
+![Run result - inventoryFeature](https://github.com/joeeen/jubelio-intern/assets/118897487/931869d1-2443-4934-b95f-f3b88d375730)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Run results
+### Example positive test cases
+![run result - positive TC](https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/7af9b4e3-e18c-457b-b518-f2f0291205b9)
 
-![Screenshot 2023-06-29 212050](https://github.com/joeeen/jubelio-intern/assets/118897487/bb232d80-2f02-4c84-a541-65d20ba472c0)
+## Reports
 
 <p align="right"><a href="#readme-top">back to top</a></p>
