@@ -1,0 +1,5 @@
+# This generates report.html locally and publish it
+default: --format html --out=Report.html --format pretty
+
+# To only publish the report to reports.cucumber.io use:
+# default: --publish
