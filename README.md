@@ -29,7 +29,7 @@ This project requires the following:
 ## Usage
 After you've set up everything, you can run the tests
 ### To run all the scenarios described in your feature files
-Execute `cucumber` command from the root of your project directory.
+Execute `cucumber --init` command from the root of your project directory.
 
 ### To run spesific feature file
 Execute `cucumber features/file_name.feature` command
@@ -48,7 +48,7 @@ Execute `cucumber features/file_name.feature` command
 ![run result - positive TC](https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/7af9b4e3-e18c-457b-b518-f2f0291205b9)
 
 ## Reports
-The HTML report will be generated automatically, like <a href="https://github.com/joeeen/Selenium-BDD-Jubelio/blob/main/Report.html">this.</a>
+Report.html will be generated automatically, it will look like this:
 ![Report](https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/046dda99-cf50-4e22-846b-dacd2ad119a2)
 
 
