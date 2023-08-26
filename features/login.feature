@@ -1,23 +1,22 @@
 @Login
 Feature: Login
 
+    As a registered_user
+    I want to log in to my account
+    So that I can access my personalized information and use the features of the platform
+
     Background:
         Given the user is on the login page
 
     @PositiveTest
     Scenario: Login with valid credentials
-        When the user inputs "<email>" and "<password>"
-        And the user clicks the login button
+        When the user logs in with valid email and password
         Then the page redirects to the Getting Started page
-        Examples:
-            | email                        | password    |
-            | qa.rakamin.jubelio@gmail.com | Jubelio123! |
 
     @NegativeTest
     Scenario: Login with empty fields
-        When the user leaves "<field>" empty
-        And the user clicks the login button
-        Then error message "<message>" is displayed
+        When the user logs in without "<field>"
+        Then an error "message" "<message>" is displayed
         Examples:
             | field    | message               |
             | email    | Email harus diisi.    |
@@ -25,21 +24,19 @@ Feature: Login
 
     @NegativeTest
     Scenario: Login with incorrect credentials
-        When the user inputs "<email>" and "<password>"
-        And the user clicks the login button
-        Then error alert "Password atau email anda salah." is displayed
+        When the user logs in with the "<field>" "<input>"
+        Then an error "alert" "Password atau email anda salah." is displayed
         Examples:
-            | test case          | email                        | password    |
-            | Incorrect email    | qa.rakamin@gmail.com         | Jubelio123! |
-            | Incorrect password | qa.rakamin.jubelio@gmail.com | Jubelio!    |
+            | field    | input                |
+            | email    | qa.rakamin@gmail.com |
+            | password | Jubelio!             |
 
     @NegativeTest
     Scenario: Login with invalid inputs
-        When the user inputs "<field>" with "<invalidInput>"
-        And the user clicks the login button
-        Then error message "<message>" is displayed
+        When the user logs in with the "<field>" "<input>"
+        Then an error "message" "<message>" is displayed
         Examples:
-            | field    | invalidInput             | message                            |
+            | field    | input                    | message                            |
             | email    | qa.rakamin.jubelio       | Format Email tidak valid.          |
             | email    | qa.rakamin.jubelio@gmail | Format Email tidak valid.          |
             | password | Jubel                    | Password harus di antara 6 dan 30. |

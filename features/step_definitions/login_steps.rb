@@ -6,14 +6,15 @@ Given('the user is on the login page') do
   @login_page = LoginPage.new
 end
 
-When('the user clicks the login button') do
-  @login_page.login_button.click
+Then('an error {string} {string} is displayed') do |type, message|
+  expect(@login_page.send("error_#{type}")).to have_text(message)
 end
 
 # Valid credentials
-When('the user inputs {string} and {string}') do |email,password|
-  fill_in('email', with: email)
-  fill_in('password', with: password)
+When('the user logs in with valid email and password') do
+  fill_in('email', with: "qa.rakamin.jubelio@gmail.com")
+  fill_in('password', with: "Jubelio123!")
+  @login_page.login_button.click
 end
 
 Then('the page redirects to the Getting Started page') do
@@ -22,27 +23,19 @@ Then('the page redirects to the Getting Started page') do
 end
 
 # Empty fields
-When('the user leaves {string} empty') do |field|
+When('the user logs in without {string}') do |field|
   fill_in('email', with: 'qa.rakamin.jubelio@gmail.com')
   fill_in('password', with: 'Jubelio123!')
   fill_in(field, with: '')
   sleep 1
+  @login_page.login_button.click
 end
 
-Then('error message {string} is displayed') do |message|
-  expect(@login_page.error_message).to have_text(message)
-end
-
-#Incorrect credentials
-Then('error alert {string} is displayed') do |message|
-  sleep 2
-  expect(@login_page.error_alert).to have_text(message)
-end
-
-#Invalid inputs
-When('the user inputs {string} with {string}') do |field,invalidInput|
+#Incorrect credentials and invalid inputs
+When('the user logs in with the {string} {string}') do |field,input|
   fill_in('email', with: 'qa.rakamin.jubelio@gmail.com')
   fill_in('password', with: 'Jubelio123!')
-  fill_in(field, with: invalidInput)
+  fill_in(field, with: input)
   sleep 1
+  @login_page.login_button.click
 end
