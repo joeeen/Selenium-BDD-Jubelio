@@ -36,21 +36,16 @@ Execute `cucumber features/file_name.feature` command
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
-## Demo
-### Update product quantity
-![Run result - inventoryFeature](https://github.com/joeeen/jubelio-intern/assets/118897487/931869d1-2443-4934-b95f-f3b88d375730)
+## Run results
+### Demo
+https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/ad6f49d9-8676-4dfe-8c23-0bca2c4b9560
 
 <p align="right"><a href="#readme-top">back to top</a></p>
-[Uploading Report.html…]()
 
-## Run results
-### Example positive test cases
-![run result - positive TC](https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/7af9b4e3-e18c-457b-b518-f2f0291205b9)
+### Reports
+The generated Report.html will be automatically created within the local repository folder. This report offers the option to filter scenarios by tags and enables us to view the scenario outline examples separately as distinct scenarios.
 
-## Reports
-Report.html will be generated automatically, it will look like this:
-![Report](https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/046dda99-cf50-4e22-846b-dacd2ad119a2)
-
+https://github.com/joeeen/Selenium-BDD-Jubelio/assets/118897487/dd8334b8-da1d-4da5-aaff-1f7155400280
 
 
 <p align="right"><a href="#readme-top">back to top</a></p>
